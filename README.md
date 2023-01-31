@@ -1,9 +1,8 @@
-> ## Bot Java Web Template - Open Source RPA
+> ## Bot Java Web Template
 Template project to start developing RPA automation of web applications
 
 [![License](http://img.shields.io/:license-apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
 [![issues](https://img.shields.io/github/issues/botcity-dev/bot-java-web-template)](https://github.com/botcity-dev/bot-java-web-template/issues)
-
 
 ---
 ### BotCity Social Media.
@@ -17,7 +16,7 @@ Template project to start developing RPA automation of web applications
 ### Important Links & Docs.
 * Please use [Community BotCity](https://community.botcity.dev/) for quick answers to questions.
 * Access our Portal [Open Source RPA](https://www.botcity.dev/)
-* Access [BotCity Web Automation Cocumentation](https://documentation.botcity.dev/frameworks/web/)
+* Access [BotCity Web Automation Documentation](https://documentation.botcity.dev/frameworks/web/)
 
 ### Requirements.
 For building and running the application you need:
@@ -28,11 +27,12 @@ For building and running the application you need:
 - [Download FirefoxDriver](https://github.com/mozilla/geckodriver/releases)
 
 ### Dependencies.
-There are a number of third-party dependencies used in the project. Browse the Maven pom.xml file for details of libraries and versions used.
+There are a number of third-party dependencies used in the project. Browse the Maven pom.xml 
+file for details of libraries and versions used.
 
 ### Quick Start
 * Step 1: Import the project into an IDE of your choice (Eclipse, IntelliJ, VSCODE etc...).
-* Step 2:Configure the WebDriver in the FirstBotWeb class, see the Doc. [Configuration WebDriver](https://documentation.botcity.dev/frameworks/web/configuration/#__tabbed_2_2)
+* Step 2: Configure the WebDriver in the FirstBotWeb class, see the Doc. [Configuration WebDriver](https://documentation.botcity.dev/frameworks/web/configuration/#__tabbed_2_2)
 * Step 3: Run the maven commands below and everything should be working.
 
 ```
@@ -41,7 +41,7 @@ mvn compile exec:java -Dexec.mainClass="dev.botcity.main.FirstBotWeb"
 ```
 
 ### Nexus Repository
-The dependencies are hosted in our public repository on NEXUS, the code below, which is already in pom.xml, directs to the correct URL, we are working to make them also available on Maven Central
+The dependencies are hosted in our public repository on NEXUS, the code below, which is already in the pom.xml, directs to the correct URL, they will soon be available in the Maven Central repository
 ```
 <repositories>
     <repository>
@@ -64,6 +64,10 @@ The dependencies are hosted in our public repository on NEXUS, the code below, w
     </dependency>
 </dependencies>
 ```
+### Generating the application build.
+Run **build.bat** on Windows or **build.sh** on Linux or Mac to build the application, 
+after finishing the build a **dist** directory will be generated with the .jar to 
+deploy in [BotCity Maestro](https://documentation.botcity.dev/en/maestro/).
 
 ### Copyright
 Released under the Apache [License](https://www.apache.org/licenses/LICENSE-2.0) 2.0.

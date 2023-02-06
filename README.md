@@ -46,7 +46,7 @@ The dependencies are hosted in our public repository on NEXUS, the code below, w
 <repositories>
     <repository>
         <id>nexus-botcity-public</id>
-        <url>https://botcity/repository/botcity-public/</url>
+        <url>https://devtools.botcity.dev:8081/repository/botcity-public/</url>
         <snapshots>
             <enabled>true</enabled>
         </snapshots>

@@ -11,7 +11,7 @@ Template project to start developing RPA automation of web applications
 [![image](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/botcitydev)
 [![image](https://img.shields.io/badge/Blogger-FF5722?style=for-the-badge&logo=blogger&logoColor=white)](https://blog.botcity.dev/pt-br/)
 [![image](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/botcity_dev/)
-[![image](https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white)](https://communitybotcitydev.slack.com/)
+[![image](https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white)](https://botcity.dev/slack)
 
 ### Important Links & Docs.
 * Please use [Community BotCity](https://community.botcity.dev/) for quick answers to questions.
@@ -37,7 +37,7 @@ file for details of libraries and versions used.
 
 ```
 mvn clean install
-mvn compile exec:java -Dexec.mainClass="dev.botcity.main.FirstBotWeb"
+mvn compile exec:java -Dexec.mainClass="br.com.main.FirstBotWeb"
 ```
 
 ### Nexus Repository

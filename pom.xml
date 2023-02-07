@@ -14,11 +14,11 @@
     </description>
 
     <properties>
+        <jdk.version>11</jdk.version>
         <main-class>br.com.main.FirstBotWeb</main-class>
         <uri-root-nexus>https://devtools.botcity.dev:8081/repository</uri-root-nexus>
-        <java.version>8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven-compiler.version>3.8.0</maven-compiler.version>
+        <maven.version>3.8.0</maven.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
 
@@ -40,20 +40,35 @@
     </repositories>
 
     <build>
-   <!-- <directory>${project.basedir}/bot-build</directory> -->
+        <!-- <directory>${project.basedir}/bot-build</directory> -->
         <resources>
             <resource>
                 <directory>src/resources</directory>
             </resource>
         </resources>
         <sourceDirectory>src/main/java</sourceDirectory>
+
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${maven.version}</version>
+                    <configuration>
+                        <source>${maven.compiler.source}</source>
+                        <target>${maven.compiler.target}</target>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>${maven-compiler.version}</version>
+                <version>${maven.version}</version>
                 <configuration>
                     <source>${maven.compiler.source}</source>
                     <target>${maven.compiler.target}</target>
+                    <release>${jdk.version}</release>
                 </configuration>
             </plugin>
 

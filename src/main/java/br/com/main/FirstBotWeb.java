@@ -23,10 +23,10 @@ public class FirstBotWeb extends WebBot implements RunnableAgent {
             setHeadless(false);
 
             // Uncomment to change the default Browser to Firefox
-            //setBrowser(Browser.CHROME);
+            // setBrowser(Browser.FIREFOX);
 
             // Uncomment to set the WebDriver path
-            //setDriverPath("/home/your-user/Documents/bot-web-driver/chromedriver");
+            // setDriverPath("/home/your-user/bot-web-driver/chromedriver");
 
             // Opens the BotCity website
             browse("https://botcity.dev");

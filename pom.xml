@@ -96,7 +96,7 @@
                     </descriptorRefs>
                     <appendAssemblyId>false</appendAssemblyId>
                     <finalName>${project.artifactId}-${project.version}</finalName>
-                    <outputDirectory>dist</outputDirectory>
+<!--                    <outputDirectory>dist</outputDirectory>-->
                 </configuration>
             </plugin>
         </plugins>

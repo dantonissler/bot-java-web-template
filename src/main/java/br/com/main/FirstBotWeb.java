@@ -1,13 +1,10 @@
-package dev.botcity.main;
+package br.com.main;
 
 import dev.botcity.framework.bot.WebBot;
 import dev.botcity.framework.web.browsers.Browser;
-import dev.botcity.maestro_sdk.BotMaestroSDK;
 import dev.botcity.maestro_sdk.BotExecutor;
 import dev.botcity.maestro_sdk.runner.BotExecution;
 import dev.botcity.maestro_sdk.runner.RunnableAgent;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 
 public class FirstBotWeb extends WebBot implements RunnableAgent {
     public FirstBotWeb() {
@@ -29,7 +26,7 @@ public class FirstBotWeb extends WebBot implements RunnableAgent {
             // setBrowser(Browser.FIREFOX);
 
             // Uncomment to set the WebDriver path
-            // setDriverPath("<path to your WebDriver binary>");
+            // setDriverPath("/home/your-user/bot-web-driver/chromedriver");
 
             // Opens the BotCity website
             browse("https://botcity.dev");

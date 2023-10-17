@@ -29,7 +29,7 @@ public class FirstBotWeb extends WebBot implements RunnableAgent {
             // setDriverPath("/home/your-user/bot-web-driver/chromedriver");
 
             // Opens the BotCity website
-            browse("https://botcity.dev");
+            browse("https://google.com");
 
         } catch (Exception e) {
             e.printStackTrace();
